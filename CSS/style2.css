@@ -1,0 +1,59 @@
+body{
+    background-color: #3cc53c;
+}
+#signup{
+    background-color: darkblue;
+    color: aliceblue;
+}
+
+button{
+    font-size: 30px;
+    background-color: #88dadc;
+}
+h1,h2{
+    color: #ea09ae;
+}
+
+span{
+    color: #c05411;
+}
+.tag{
+    background-color: red;
+    color: aqua;
+    font-size: 16px;
+}
+
+.post a{
+    color: #c05411;
+}
+
+footer a{
+    color: #e91414;
+}
+
+h2+button{
+    font-size: 20px;
+}
+footer > a{
+    color: rgb(135, 13, 188);
+}
+
+input [type = "password"]{
+    color: red;
+}
+
+.post button:hover{
+    background-color: darkred;
+    color: white;
+}
+
+.post button:active{
+    background-color: rgb(0, 208, 255);
+}
+
+.post:nth-last-of-type(2n){
+    background-color: rgb(127, 255, 191);
+}
+
+/* inline styles  more priority or bad to use */
+/* !important also more power than or other  */

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= category %> Products</title>
+</head>
+<body>
+    <h1> <%= category %>  Product!</h1>
+    <ul>
+        <%for(let product of products){%>
+           <li> <a href="/products/<%= product._id%>"><%=product.name%></a></li>
+        <% }%>
+         <footer>
+            <button type="button"><a href="/products/new">Add new</a></button>
+            <% if(category != 'All'){ %>
+                <a href="/products">All products</a>
+            <% } %>
+         </footer>
+    </ul>
+</body>
+</html>
